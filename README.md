@@ -13,11 +13,16 @@ This is the script that reads raw files, cleans and organizes data and writes th
 DAT <- read.csv("tidydata-agg-csv.txt")
 ```
 
+The code has a ```setwd()``` at the top to set my working directory. You may need to change that to your working directory if you want to check the code out. This script requires that the samsung data be present in the same directory. You can simply unzip the downloaded data into the working directory and it will create a directory there called "UCI HAR Dataset". This script will simply work with this directory.
+
 ###tidydata-csv.txt
 This is the clean data file with data still at the most granular form.
 
 ###tidydata-agg-csv.txt
 This is the clean data file with data aggregated (mean) by subject and activity.
 
+###CODEBOOK.md
+This is the description of variables in the data files. It refers to few of the files (listed below) that come as part of the original downloaded. This is done to avoid duplication of effort.
 
-
+###features.info
+It describes the features for with data is collected. Each feature appears as a column in the data file.

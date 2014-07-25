@@ -16,12 +16,10 @@ It describes the activity the subject was performing while the data was being re
 - WALKING_DOWNSTAIRS
 - WALKING_UPSTAIRS
   
-**subject**  
-*[factor]*  
+**subject** *[factor]*  
 It is the numeric code identifying each of the 30 subjects. It is a sequencial list from 1 to 30.
   
-**feature variables**  
-*[numeric]*  
+**feature variables** *[numeric]*  
 This dataset includes only the mean() and std() features. Features are the types of measures that are collected from the smart devices during this experiment. Here is the list of included features:
   
 ```
