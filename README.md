@@ -1,7 +1,4 @@
----
-output: html_document
----
-This repository contains R code and data files submission for getdata-005 Course project. Here is the list and description of files include with this dataset:
+This repository contains R code and data files submission for getdata-005 Course project. The original dataset is not included in this repository. It is available from [this link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). Here is the list and description of files include with this dataset:
 
 ###README.md
 It is the document that you are reading now.
