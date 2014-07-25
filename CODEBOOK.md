@@ -1,10 +1,6 @@
----
-title: "Code Book"
-author: "skarmach@gmail.com"
-output: html_document
----
+#Code Book
   
-This document describes the variables in the dataset in "tidydata-agg-csv.txt" and "tidydata-csv.txt" file. Both files are identical in format so the information is this document is applicable to both.
+This document describes the variables in the dataset in "tidydata-agg-csv.txt" and "tidydata-csv.txt" file. Both files are identical in format so the information in this document is applicable to both.
   
 **activity** *[factor]*  
 It describes the activity the subject was performing while the data was being recorded. It can have the following values:
@@ -20,7 +16,7 @@ It describes the activity the subject was performing while the data was being re
 It is the numeric code identifying each of the 30 subjects. It is a sequencial list from 1 to 30.
   
 **feature variables** *[numeric]*  
-This dataset includes only the mean() and std() features. Features are the types of measures that are collected from the smart devices during this experiment. Here is the list of included features:
+This dataset includes only the mean() and std() features. Features are the types of measures that are collected from the smart devices during this experiment. Below is the list of included features. **Please note that for "tidydata-agg-csv.txt" file, the values are actually averages for the subject and activity**.
   
 ```
  [1] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"          

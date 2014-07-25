@@ -1,14 +1,25 @@
 ---
-title: "getdata-005 Course Project"
-author: "skarmach@gmail.com"
-date: "Friday, July 25, 2014"
 output: html_document
 ---
+This repository contains R code and data files submission for getdata-005 Course project. Here is the list and description of files include with this dataset:
 
-This repository contains R code and data files submission for getdata-005 Course project. Here is the description of each file:
+###README.md
+It is the document that you are reading now.
 
 ###run_analysis.R
-This is the script that reads raw files, cleans and organizes data and writes the clean data out to a 'txt' file called "tidydata-agg-csv.txt".  The written data is in CSV format. It can be read with the following command:
+This script reads files with:
+  
+1. training and test data from the accelerometers and gyroscopes from wearable fitness devices.
+2. data mapping certain codes to their descriptive labels 
+  
+The script tidies the data up for analysis by:
+  
+1. adding in descriptive labels
+2. retaining only desired measures (means and stds)
+3. merging training and test data
+4. converting categorical fields to factors
+  
+The output of this script are two 'txt' files called "tidydata-csv.txt" [data in original granularity] and "tidydata-agg-csv.txt" [measures aggregated as averages of activity and subject]. The written data is in CSV format. It can be read with the following command:
 ```
 DAT <- read.csv("tidydata-agg-csv.txt")
 ```
@@ -24,5 +35,12 @@ This is the clean data file with data aggregated (mean) by subject and activity.
 ###CODEBOOK.md
 This is the description of variables in the data files. It refers to few of the files (listed below) that come as part of the original downloaded. This is done to avoid duplication of effort.
 
-###features.info
-It describes the features for with data is collected. Each feature appears as a column in the data file.
+###README.txt [from original dataset]
+This is the README file from the original dataset. It is included here to provide ample background to the original dataset.
+
+###features.info [from original dataset]
+It describes the features for which data is collected. Each feature appears as a column in the data files.
+
+###features.txt [from original dataset]
+It lists all the feature variables in the original dataset. Please note that the dataset produced by this project retains only the "mean" and "std" class of variables.
+
